@@ -39,12 +39,22 @@
             </div>
             <div class="text-center mt-20">
                 <button id="orderButton" class="btn btn-sm btn-success">Submit Order!</button>
+                <button id="orderAnotherButton" class="btn btn-sm btn-warning">Submit Another Order!</button>
             </div>
             <hr>
-            <div class="row pizza-orders">
-                <div class="col-md-12">
+            <div class="row ">
+                <div class="col-md-12 pizza-orders">
                     <h3>Your Orders</h3>
                     <p>Order No: <span id="orderNo"></span> Size: <span id="size"></span> Toppings: <span id="toppings"></span> Crust: <span id="crust"></span> <strong>Total: <span id="total"></span> </strong></p>
+                    
+
+
+                </div>
+            </div>
+            <div class="row" id="grandTotal">
+                <div class="alert alert-success">
+                    GRAND TOTAL: KSH.<span></span><br>
+                    <button id="checkoutButton" class="btn btn-success btn-sm">Check Out!</button>
                 </div>
             </div>
         </div>
