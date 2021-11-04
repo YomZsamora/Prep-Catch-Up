@@ -7,7 +7,49 @@
 
 
     <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Size</h3>
+                    <select class="form-control pizza-size">
+                        <option>-  select pizza size -</option>
+                        <option value="1000">Large</option>
+                        <option value="700">Medium</option>
+                        <option value="500">Small</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <h3>Toppings</h3>
+                    <select class="form-control pizza-toppings">
+                        <option>-  select pizza toppings -</option>
+                        <option value="100">Olives</option>
+                        <option value="50">Pepperoni</option>
+                        <option value="80">Cheese</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <h3>Crust</h3>
+                    <select class="form-control pizza-crust">
+                        <option>-  select pizza crust -</option>
+                        <option value="500">Stuffed</option>
+                        <option value="200">Gluten-Free</option>
+                        <option value="300">Crispy</option>
+                    </select>
+                </div>
+            </div>
+            <div class="text-center mt-20">
+                <button id="orderButton" class="btn btn-sm btn-success">Submit Order!</button>
+            </div>
+            <hr>
+            <div class="row pizza-orders">
+                <div class="col-md-12">
+                    <h3>Your Orders</h3>
+                    <p>Order No: <span id="orderNo"></span> Size: <span id="size"></span> Toppings: <span id="toppings"></span> Crust: <span id="crust"></span> <strong>Total: <span id="total"></span> </strong></p>
+                </div>
+            </div>
+        </div>
 
+        
 
 
         <script src="js/jquery-3.4.1.js"></script>
